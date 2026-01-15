@@ -1,0 +1,1221 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Demo User",
+      "email": "demo@gmail.com",
+      "password": "123456",
+      "cart": [],
+      "wishlist": []
+    },
+    {
+      "id": "9e78",
+      "name": "muflih",
+      "email": "muflih123@gmail.com",
+      "password": "123456",
+      "cart": [
+        {
+          "id": "5",
+          "name": "Puffer Black iPhone Case",
+          "price": 1799,
+          "mrp": 2799,
+          "dealPrice": 1599,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casexs.in/cdn/shop/files/3_7ded5b06-0dfc-41c9-9d68-588cf68f4c44.jpg?v=1726909496&width=800",
+          "selectedColor": "Black",
+          "qty": 1
+        }
+      ],
+      "wishlist": [],
+      "shipping": {
+        "fullName": "Mohammed Muflih",
+        "phone": "4567890211",
+        "address": "kerala",
+        "city": "kottakakl",
+        "pincode": "676501"
+      }
+    },
+    {
+      "id": "57d2",
+      "name": "akash",
+      "email": "akash123@gmail.com",
+      "password": "1234567",
+      "cart": [],
+      "wishlist": [],
+      "shipping": {
+        "fullName": "muflih",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "malappuram",
+        "pincode": "676502"
+      },
+      "lastOrder": {
+        "items": [
+          {
+            "id": 1,
+            "name": "Silicone Snap Fit Case Cover",
+            "device": "iPhone 17 Pro Max",
+            "rating": 4.5,
+            "reviews": 277,
+            "price": 1299,
+            "mrp": 1999,
+            "dealPrice": 1169,
+            "discount": 35,
+            "colors": [
+              {
+                "name": "Black",
+                "code": "#111111",
+                "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+              },
+              {
+                "name": "Orange",
+                "code": "#f97316",
+                "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+              },
+              {
+                "name": "Brown",
+                "code": "#7c2d12",
+                "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+              }
+            ],
+            "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+            "selectedColor": "Black",
+            "selectedModel": "iPhone 17 Pro Max",
+            "qty": 13
+          }
+        ],
+        "total": 16887,
+        "date": "2026-01-12T13:19:15.208Z"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Silicone Snap Fit Case Cover",
+      "device": "iPhone 17 Pro Max",
+      "rating": 4.5,
+      "reviews": 277,
+      "price": 1299,
+      "mrp": 1999,
+      "dealPrice": 1169,
+      "discount": 35,
+      "colors": [
+        {
+          "name": "Orange",
+          "code": "#f97316",
+          "image": "./assets/17_PM_Silicone_Orange_case.webp"
+        },
+        {
+          "name": "blue",
+          "code": "#000053",
+          "image": "./assets/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.webp"
+        },
+        {
+          "name": "Black",
+          "code": "#111111",
+          "image": "./assets/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.webp"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Grip Armour Case Cover",
+      "device": "iPhone 16 Pro Max",
+      "rating": 4.6,
+      "reviews": 198,
+      "price": 1399,
+      "mrp": 2199,
+      "dealPrice": 1249,
+      "discount": 36,
+      "colors": [
+        {
+          "name": "white",
+          "code": "#FFFFFF",
+          "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800"
+        },
+        {
+          "name": "Black",
+          "code": "#000000 ",
+          "image": "https://casegear.in/cdn/shop/files/5_76bef746-06bb-48a3-b8c1-041e2bb07f2b.png?v=1700355817&width=500"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Modern Leatherite Case Cover",
+      "device": "iPhone 16 Pro Max",
+      "rating": 4.4,
+      "reviews": 321,
+      "price": 1199,
+      "mrp": 1899,
+      "dealPrice": 1049,
+      "discount": 45,
+      "colors": [
+        {
+          "name": "Matte Black",
+          "code": "#000000",
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800"
+        },
+        {
+          "name": "Windsor Tan",
+          "code": "#A75502",
+          "image": "https://casegear.in/cdn/shop/files/1_Image.png?v=1763099548&width=800"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Bold Pro Case Cover",
+      "device": "iPhone 16 Pro Max",
+      "rating": 4.3,
+      "reviews": 410,
+      "price": 1499,
+      "mrp": 2399,
+      "dealPrice": 1349,
+      "discount": 44,
+      "colors": [
+        {
+          "name": "Clear",
+          "code": "#ffffff",
+          "image": "https://casegear.in/cdn/shop/files/iphone_16_PM_white_back_image.png?v=1763103900&width=800"
+        },
+        {
+          "name": "Black",
+          "code": "#000000",
+          "image": "https://casegear.in/cdn/shop/files/1_4467a1e1-e1f4-4fd1-b27a-f6c8ca2927ee.jpg?v=1763103900&width=800"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Puffer Black iPhone Case",
+      "device": "iPhone 16 Pro Max",
+      "rating": 4.7,
+      "reviews": 142,
+      "price": 1799,
+      "mrp": 2799,
+      "dealPrice": 1599,
+      "discount": 43,
+      "colors": [
+        {
+          "name": "Black",
+          "code": "#000000",
+          "image": "https://casexs.in/cdn/shop/files/3_7ded5b06-0dfc-41c9-9d68-588cf68f4c44.jpg?v=1726909496&width=800"
+        },
+        {
+          "name": "White",
+          "code": "#ffffff",
+          "image": "https://casexs.in/cdn/shop/files/3_cf494fff-de3d-4431-b82d-0b1fde19a314.jpg?v=1758365672&width=800"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Batman Eye Leather iPhone Case",
+      "device": "iPhone 16 Pro Max",
+      "rating": 4.2,
+      "reviews": 267,
+      "price": 999,
+      "mrp": 1599,
+      "dealPrice": 899,
+      "discount": 44,
+      "colors": [
+        {
+          "name": "Black",
+          "code": "#000000",
+          "image": "https://casexs.in/cdn/shop/files/7e5e564d63a772a3a24358c8ffec16d7.jpg?v=1756407829&width=600"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Cross Heart Leather Case",
+      "device": "iPhone 17 Pro Max",
+      "rating": 4.6,
+      "reviews": 189,
+      "price": 1899,
+      "mrp": 2899,
+      "dealPrice": 1699,
+      "discount": 41,
+      "colors": [
+        {
+          "name": "Carbon Black",
+          "code": "#111827",
+          "image": "https://casexs.in/cdn/shop/files/IMG_1373.jpg?v=1764944672&width=800"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Wave iPhone Case",
+      "device": "iPhone 16 Pro Max",
+      "rating": 4.1,
+      "reviews": 504,
+      "price": 899,
+      "mrp": 1499,
+      "dealPrice": 799,
+      "discount": 47,
+      "colors": [
+        {
+          "name": "Cherrr Red",
+          "code": "#D20429",
+          "image": "https://casexs.in/cdn/shop/files/71BLFiIMqvL._SL1500.jpg?v=1752600855&width=800"
+        },
+        {
+          "name": "Black",
+          "code": "#000000",
+          "image": "https://casexs.in/cdn/shop/files/1_280dd24b-3ba6-4ada-9d67-7d7527f258c1.jpg?v=1744293312&width=800"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Floral Embroidery iPhone Case",
+      "device": "iPhone 16 Pro Max",
+      "rating": 4,
+      "reviews": 612,
+      "price": 799,
+      "mrp": 1299,
+      "dealPrice": 699,
+      "discount": 46,
+      "colors": [
+        {
+          "name": "Clear",
+          "code": "#ffffff",
+          "image": "https://casexs.in/cdn/shop/files/IMG_0345.heic?v=1742213573&width=700"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Flame Flexible Case",
+      "device": "iPhone 17 Pro Max",
+      "rating": 4.8,
+      "reviews": 91,
+      "price": 2599,
+      "mrp": 3699,
+      "dealPrice": 2299,
+      "discount": 38,
+      "colors": [
+        {
+          "name": "Black",
+          "code": "#000000",
+          "image": "https://casexs.in/cdn/shop/files/IMG_8337.png?v=1733747699&width=800"
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD001",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": 2,
+          "name": "Premium Liquid Silicone Case",
+          "qty": 3,
+          "price": 1399
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "Muflih",
+        "phone": "9876543210",
+        "address": "Kottakkal",
+        "city": "Malappuram",
+        "pincode": "676503"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 4197,
+      "status": "Placed",
+      "createdAt": "2026-01-12"
+    },
+    {
+      "id": "ORD-1768224800692",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:20.692Z"
+    },
+    {
+      "id": "ORD-1768224802299",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:22.299Z"
+    },
+    {
+      "id": "ORD-1768224805479",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:25.479Z"
+    },
+    {
+      "id": "ORD-1768224805712",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:25.712Z"
+    },
+    {
+      "id": "ORD-1768224805921",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:25.921Z"
+    },
+    {
+      "id": "ORD-1768224806128",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:26.128Z"
+    },
+    {
+      "id": "ORD-1768224806341",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:26.341Z"
+    },
+    {
+      "id": "ORD-1768224806557",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:33:26.557Z"
+    },
+    {
+      "id": "ORD-1768224859480",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 13
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "asaaa",
+        "phone": "7560909225",
+        "address": "dgfgrg",
+        "city": "wdwedwedewd",
+        "pincode": "123456"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 16887,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:34:19.480Z"
+    },
+    {
+      "id": "ORD-1768224960059",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 2,
+          "name": "Premium Liquid Silicone Case",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.6,
+          "reviews": 198,
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "discount": 36,
+          "colors": [
+            {
+              "name": "Midnight Blue",
+              "code": "#1e3a8a",
+              "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg"
+            },
+            {
+              "name": "Red",
+              "code": "#dc2626",
+              "image": "https://i.pinimg.com/736x/6a/98/2c/6a982c9309db7b7a5df51bbcb9c0ef9e.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg",
+          "selectedColor": "Midnight Blue",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "muflih",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1399,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:36:00.059Z"
+    },
+    {
+      "id": "ORD-1768225004163",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 2,
+          "name": "Premium Liquid Silicone Case",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.6,
+          "reviews": 198,
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "discount": 36,
+          "colors": [
+            {
+              "name": "Midnight Blue",
+              "code": "#1e3a8a",
+              "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg"
+            },
+            {
+              "name": "Red",
+              "code": "#dc2626",
+              "image": "https://i.pinimg.com/736x/6a/98/2c/6a982c9309db7b7a5df51bbcb9c0ef9e.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg",
+          "selectedColor": "Midnight Blue",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "muflih",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1399,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:36:44.163Z"
+    },
+    {
+      "id": "ORD-1768225052225",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 2,
+          "name": "Premium Liquid Silicone Case",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.6,
+          "reviews": 198,
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "discount": 36,
+          "colors": [
+            {
+              "name": "Midnight Blue",
+              "code": "#1e3a8a",
+              "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg"
+            },
+            {
+              "name": "Red",
+              "code": "#dc2626",
+              "image": "https://i.pinimg.com/736x/6a/98/2c/6a982c9309db7b7a5df51bbcb9c0ef9e.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg",
+          "selectedColor": "Midnight Blue",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jnskjnvnf",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1399,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:37:32.225Z"
+    },
+    {
+      "id": "ORD-1768225153970",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 2,
+          "name": "Premium Liquid Silicone Case",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.6,
+          "reviews": 198,
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "discount": 36,
+          "colors": [
+            {
+              "name": "Midnight Blue",
+              "code": "#1e3a8a",
+              "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg"
+            },
+            {
+              "name": "Red",
+              "code": "#dc2626",
+              "image": "https://i.pinimg.com/736x/6a/98/2c/6a982c9309db7b7a5df51bbcb9c0ef9e.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/2c/71/41/2c71414b4ef0f45ed1cfd02b2d21c18c.jpg",
+          "selectedColor": "Midnight Blue",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jnskjnvnf",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "wndwnd nd",
+        "pincode": "111111"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1399,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:39:13.970Z"
+    },
+    {
+      "id": "ORD-1768225200074",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://i.pinimg.com/736x/8b/3b/0b/8b3b0b2fa2fd0f19d0c1c3b09fbbf7b6.jpg"
+            },
+            {
+              "name": "Brown",
+              "code": "#7c2d12",
+              "image": "https://i.pinimg.com/736x/0b/47/8f/0b478f07c6a23e9c8f44c9a30b5efb6f.jpg"
+            }
+          ],
+          "image": "https://i.pinimg.com/736x/81/82/7e/81827ee4dbabee0d1aac7e23648ec416.jpg",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "muflih",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "sdcndsmcdsc",
+        "pincode": "111111"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1299,
+      "status": "Placed",
+      "createdAt": "2026-01-12T13:40:00.074Z"
+    },
+    {
+      "id": "ORD-1768229618583",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": 1,
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "./assets/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.webp"
+            },
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "./assets/17_PM_Silicone_Orange_case.webp"
+            },
+            {
+              "name": "blue",
+              "code": "#000053",
+              "image": "./assets/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.webp"
+            }
+          ],
+          "image": "./assets/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.webp",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "muflih",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "wndwnd nd",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1299,
+      "status": "Placed",
+      "createdAt": "2026-01-12T14:53:38.583Z"
+    },
+    {
+      "id": "ORD-1768280324204",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": "4",
+          "name": "Bold Pro Case Cover",
+          "price": 1499,
+          "mrp": 2399,
+          "dealPrice": 1349,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/iphone_16_PM_white_back_image.png?v=1763103900&width=800",
+          "selectedColor": "Clear",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jnskjnvnf",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "malappuram",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1499,
+      "status": "Placed",
+      "createdAt": "2026-01-13T04:58:44.204Z"
+    },
+    {
+      "id": "ORD-1768295713931",
+      "userId": "57d2",
+      "items": [
+        {
+          "id": "2",
+          "name": "Grip Armour Case Cover",
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800",
+          "selectedColor": "white",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "muflih",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "malappuram",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 1399,
+      "status": "Placed",
+      "createdAt": "2026-01-13T09:15:13.931Z"
+    },
+    {
+      "id": "ORD-1768367447531",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "device": "iPhone 17 Pro Max",
+          "image": "./assets/17_PM_Silicone_Orange_case.webp",
+          "selectedColor": "Orange",
+          "qty": 3
+        },
+        {
+          "id": "2",
+          "name": "Grip Armour Case Cover",
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800",
+          "selectedColor": "white",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "muflih",
+        "phone": "1111111111",
+        "address": "dsjhbdjdc",
+        "city": "sdcndsmcdsc",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 5296,
+      "status": "Placed",
+      "createdAt": "2026-01-14T05:10:47.531Z"
+    },
+    {
+      "id": "ORD-1768384480728",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "device": "iPhone 17 Pro Max",
+          "image": "./assets/17_PM_Silicone_Orange_case.webp",
+          "selectedColor": "Orange",
+          "qty": 2
+        },
+        {
+          "id": "6",
+          "name": "Batman Eye Leather iPhone Case",
+          "device": "iPhone 16 Pro Max",
+          "rating": 4.2,
+          "reviews": 267,
+          "price": 999,
+          "mrp": 1599,
+          "dealPrice": 899,
+          "discount": 44,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#000000",
+              "image": "https://casexs.in/cdn/shop/files/7e5e564d63a772a3a24358c8ffec16d7.jpg?v=1756407829&width=600"
+            }
+          ],
+          "image": "https://casexs.in/cdn/shop/files/7e5e564d63a772a3a24358c8ffec16d7.jpg?v=1756407829&width=600",
+          "selectedColor": "Black",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "Mohammed Muflih",
+        "phone": "4567890211",
+        "address": "kerala",
+        "city": "kottakakl",
+        "pincode": "676501"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 3597,
+      "status": "Placed",
+      "createdAt": "2026-01-14T09:54:40.728Z"
+    },
+    {
+      "id": "ORD-1768385846692",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "8",
+          "name": "Wave iPhone Case",
+          "price": 899,
+          "mrp": 1499,
+          "dealPrice": 799,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casexs.in/cdn/shop/files/71BLFiIMqvL._SL1500.jpg?v=1752600855&width=800",
+          "selectedColor": "Cherrr Red",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "Mohammed Muflih",
+        "phone": "4567890211",
+        "address": "kerala",
+        "city": "kottakakl",
+        "pincode": "676501"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "total": 899,
+      "status": "Placed",
+      "createdAt": "2026-01-14T10:17:26.692Z"
+    }
+  ]
+}
