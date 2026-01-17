@@ -11,17 +11,33 @@ function Register() {
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setError("")
+const handleSubmit = async (e) => {
+  e.preventDefault()
+  setError("")
 
-    try {
-      await register(name, email, password)
-      navigate("/login")
-    } catch (err) {
-      setError(err.message)
-    }
+  // ✅ NAME VALIDATION
+  const trimmedName = name.trim()
+  const nameRegex = /^[A-Za-z]+( [A-Za-z]+)*$/
+
+  if (!trimmedName || !nameRegex.test(trimmedName)) {
+    setError("Enter a proper name")
+    return
   }
+
+  // ✅ PASSWORD VALIDATION
+  if (password.length < 6) {
+    setError("Password must be at least 6 characters")
+    return
+  }
+
+  try {
+    await register(trimmedName, email, password)
+    navigate("/login")
+  } catch (err) {
+    setError(err.message)
+  }
+}
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black">

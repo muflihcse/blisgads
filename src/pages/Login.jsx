@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { useAuth } from "../context/AuthContext"
+import { toast } from "react-toastify"
 
 function Login() {
   const { login } = useAuth()
@@ -12,11 +13,21 @@ function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    if (!email || !password) {
+      setError("Email and password is required!")
+      toast.error("Email and password is required!")
+      return
+    }
+
     const success = await login(email, password)
+
     if (success) {
+      toast.success("Login successful ✅")
       navigate("/")
     } else {
       setError("Invalid email or password")
+      toast.error("Invalid email or password ❌")
     }
   }
 
@@ -53,7 +64,7 @@ function Login() {
         </button>
 
         <p className="text-gray-400 text-sm mt-4 text-center">
-          Don’t have an account?{" "}
+          Don't have an account?{" "}
           <Link to="/register" className="underline">
             Register
           </Link>

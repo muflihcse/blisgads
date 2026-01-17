@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { useCart } from "../context/CartContext"
+import { toast } from "react-toastify"
 
 function Cart() {
   const {
@@ -29,6 +30,7 @@ function Cart() {
           key={`${item.id}-${item.selectedColor}`}
           className="flex justify-between items-center border-b py-6"
         >
+          {/* LEFT */}
           <div className="flex gap-4 items-center">
             <img
               src={item.image}
@@ -41,17 +43,17 @@ function Cart() {
               <p className="text-sm text-gray-500">
                 Color: {item.selectedColor}
               </p>
-              <p className="text-gray-500">
-                ₹{item.price}
-              </p>
+              <p className="text-gray-500">₹{item.price}</p>
             </div>
           </div>
 
+          {/* RIGHT */}
           <div className="flex items-center gap-4">
             <button
-              onClick={() =>
+              onClick={() => {
                 decreaseQty(item.id, item.selectedColor)
-              }
+                toast.info("Quantity decreased")
+              }}
               className="px-3 text-xl"
             >
               -
@@ -60,18 +62,20 @@ function Cart() {
             <span>{item.qty}</span>
 
             <button
-              onClick={() =>
+              onClick={() => {
                 increaseQty(item.id, item.selectedColor)
-              }
+                toast.success("Quantity increased")
+              }}
               className="px-3 text-xl"
             >
               +
             </button>
 
             <button
-              onClick={() =>
+              onClick={() => {
                 removeFromCart(item.id, item.selectedColor)
-              }
+                toast.error("Item removed from cart")
+              }}
               className="text-red-500 ml-4"
             >
               Remove
@@ -80,13 +84,17 @@ function Cart() {
         </div>
       ))}
 
+      {/* TOTAL */}
       <div className="flex justify-between items-center mt-10">
         <h2 className="text-xl font-semibold">
           Total: ₹{total}
         </h2>
 
         <button
-          onClick={() => navigate("/checkout")}
+          onClick={() => {
+            toast.success("Proceeding to checkout")
+            navigate("/checkout")
+          }}
           className="border px-6 py-3 hover:bg-black hover:text-white transition"
         >
           PROCEED TO CHECKOUT

@@ -2,6 +2,7 @@ import { FiX, FiHeart } from "react-icons/fi"
 import { useState } from "react"
 import { useCart } from "../context/CartContext"
 import { useWishlist } from "../context/WishlistContext"
+import { toast } from "react-toastify"
 
 function ProductModal({ product, onClose }) {
   if (!product) return null
@@ -9,7 +10,6 @@ function ProductModal({ product, onClose }) {
   const { addToCart } = useCart()
   const { toggleWishlist, isInWishlist } = useWishlist()
 
-  
   const colors = product.colors ?? []
   const iphoneModels = product.iphoneModels ?? [
     "iPhone 13 Pro",
@@ -21,7 +21,7 @@ function ProductModal({ product, onClose }) {
     "iPhone 16 Pro",
     "iPhone 16 Pro Max",
     "iPhone 17 Pro",
-    "iPhone 17 Pro Max"
+    "iPhone 17 Pro Max",
   ]
 
   const [activeColor, setActiveColor] = useState(colors[0])
@@ -38,6 +38,10 @@ function ProductModal({ product, onClose }) {
       selectedModel,
       qty,
     })
+
+    toast.success("Item added to cart 🛒")
+    toast.info("If item exists, quantity updated")
+
     onClose()
   }
 
@@ -45,10 +49,14 @@ function ProductModal({ product, onClose }) {
     <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center">
       <div className="bg-white w-[95%] max-w-6xl grid grid-cols-2 rounded-xl shadow-xl relative overflow-hidden">
 
-        
         <div className="absolute top-5 right-5 flex gap-4 z-10">
           <button
-            onClick={() => toggleWishlist(product)}
+            onClick={() => {
+              toggleWishlist(product)
+              isInWishlist(product.id)
+                ? toast.info("Removed from wishlist 💔")
+                : toast.success("Added to wishlist ❤️")
+            }}
             className="p-2 rounded-full hover:bg-gray-100 transition"
           >
             <FiHeart
@@ -78,9 +86,8 @@ function ProductModal({ product, onClose }) {
           />
         </div>
 
-        {/* contents*/}
+        {/* contents */}
         <div className="p-12 overflow-y-auto">
-
           <h1 className="text-3xl font-semibold tracking-tight">
             {product.name}
           </h1>
@@ -93,22 +100,18 @@ function ProductModal({ product, onClose }) {
             {product.reviews} customer reviews
           </div>
 
-          {/* price  */}
+          {/* price */}
           <div className="mt-6 flex items-end gap-4">
-            <span className="text-4xl font-semibold">
-              ₹{product.price}
-            </span>
-
+            <span className="text-4xl font-semibold">₹{product.price}</span>
             <span className="text-lg text-gray-400 line-through">
               ₹{product.mrp}
             </span>
-
             <span className="text-xs border px-3 py-1 rounded-full">
               Save {product.discount}%
             </span>
           </div>
 
-          {/* featurs */}
+          {/* features */}
           <div className="grid grid-cols-2 gap-3 mt-8 text-sm text-gray-700">
             <div>MagSafe compatible</div>
             <div>Anti-skid grip</div>
@@ -116,17 +119,15 @@ function ProductModal({ product, onClose }) {
             <div>Lifetime warranty</div>
           </div>
 
-         
+          {/* model */}
           <div className="mt-8">
-            <p className="text-sm font-medium mb-2">
-              Select model
-            </p>
+            <p className="text-sm font-medium mb-2">Select model</p>
             <select
               value={selectedModel}
               onChange={(e) => setSelectedModel(e.target.value)}
               className="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-black"
             >
-              {iphoneModels.map(model => (
+              {iphoneModels.map((model) => (
                 <option key={model} value={model}>
                   {model}
                 </option>
@@ -134,16 +135,19 @@ function ProductModal({ product, onClose }) {
             </select>
           </div>
 
-         {/* colour */}
+          {/* colour */}
           <div className="mt-8">
             <p className="text-sm font-medium mb-3">
               Colour: <span className="text-gray-500">{activeColor?.name}</span>
             </p>
             <div className="flex gap-4">
-              {colors.map(color => (
+              {colors.map((color) => (
                 <button
                   key={color.name}
-                  onClick={() => setActiveColor(color)}
+                  onClick={() => {
+                    setActiveColor(color)
+                    toast.info(`Colour changed to ${color.name}`)
+                  }}
                   className={`w-9 h-9 rounded-full border transition ${
                     activeColor?.name === color.name
                       ? "ring-2 ring-black"
@@ -155,14 +159,17 @@ function ProductModal({ product, onClose }) {
             </div>
           </div>
 
-          {/* quan */}
+          {/* quantity */}
           <div className="mt-8">
-            <p className="text-sm font-medium mb-3">
-              Quantity
-            </p>
+            <p className="text-sm font-medium mb-3">Quantity</p>
             <div className="flex items-center gap-4">
               <button
-                onClick={() => setQty(q => Math.max(1, q - 1))}
+                onClick={() => {
+                  if (qty > 1) {
+                    toast.info("Quantity decreased ➖")
+                    setQty(qty - 1)
+                  }
+                }}
                 className="w-9 h-9 border rounded hover:bg-gray-100 transition"
               >
                 −
@@ -171,7 +178,10 @@ function ProductModal({ product, onClose }) {
               <span className="text-base font-medium">{qty}</span>
 
               <button
-                onClick={() => setQty(q => q + 1)}
+                onClick={() => {
+                  setQty((q) => q + 1)
+                  toast.success("Quantity increased ➕")
+                }}
                 className="w-9 h-9 border rounded hover:bg-gray-100 transition"
               >
                 +
@@ -179,14 +189,12 @@ function ProductModal({ product, onClose }) {
             </div>
           </div>
 
-          
           <button
             onClick={handleAddToCart}
             className="mt-10 w-full bg-black text-white py-4 rounded-full text-sm tracking-wide hover:opacity-90 transition"
           >
             ADD TO CART
           </button>
-
         </div>
       </div>
     </div>

@@ -1,4 +1,3 @@
-
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useCart } from "../context/CartContext"
@@ -7,18 +6,21 @@ import { toast } from "react-toastify"
 
 function ProductCard({ product, onOpen }) {
   const { addToCart } = useCart()
-  const {user} = useAuth()
+  const { user } = useAuth()
   const navigate = useNavigate()
 
   const [activeColor, setActiveColor] = useState(product.colors[0])
 
+  // ✅ ACCESS CONTROL ONLY
   const handleAction = (action) => {
-    if(!user) toast.warning('please login and try again!')
+    if (!user) {
+      toast.warning("Please login to add items to cart")
+      return
+    }
+    action()
   }
 
-  const handleAddToCart = (e) => {
-    e.stopPropagation()
-
+  const handleAddToCart = () => {
     addToCart({
       id: product.id,
       name: product.name,
@@ -27,9 +29,13 @@ function ProductCard({ product, onOpen }) {
       dealPrice: product.dealPrice,
       device: product.device,
       image: activeColor.image,
-      selectedColor: activeColor.name, 
+      selectedColor: activeColor.name,
       qty: 1,
     })
+
+    // ✅ TOASTIFY ONLY (NO LOGIC CHANGE)
+    toast.success("Item added to cart 🛒")
+    toast.info("If item already exists, quantity increased ➕")
 
     navigate("/cart")
   }
@@ -50,7 +56,6 @@ function ProductCard({ product, onOpen }) {
       />
 
       <h3 className="mt-4 font-semibold text-lg">{product.name}</h3>
-
       <p className="text-sm text-gray-500">For {product.device}</p>
 
       <div className="flex gap-2 mt-3">
@@ -60,6 +65,9 @@ function ProductCard({ product, onOpen }) {
             onClick={(e) => {
               e.stopPropagation()
               setActiveColor(color)
+
+              // ✅ TOASTIFY FOR COLOR CHANGE
+              toast.info(`Color changed to ${color.name}`)
             }}
             className={`w-5 h-5 rounded-full border ${
               activeColor.name === color.name ? "ring-2 ring-black" : ""
@@ -77,7 +85,13 @@ function ProductCard({ product, onOpen }) {
       </div>
 
       <button
-        onClick={() => handleAction(handleAddToCart)}
+        onClick={(e) => {
+          e.stopPropagation()
+
+          
+
+          handleAction(handleAddToCart)
+        }}
         className="mt-4 w-full bg-black text-white py-3 rounded"
       >
         ADD TO CART
