@@ -57,7 +57,7 @@
 // }
 
 // export default App
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import FeaturesStrip from "./components/FeaturesStrip"
 import Footer from "./components/Footer"
@@ -77,17 +77,28 @@ import PublicRoute from "./components/PublicRoute"
 import PrivateRoute from "./components/PrivateRoute"
 
 import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 import { useRef } from "react"
 
-function App() {
-  const toast = useRef(null)
+// Admin Imports
+import AdminLayout from "./admin/component/AdminLayout"
+import AdminDashboard from "./admin/pages/Dashboard"
+import AdminProducts from "./admin/pages/Products"
+import AdminOrders from "./admin/pages/Orders"
+import AdminUsers from "./admin/pages/Users"
+import AdminBanners from "./admin/pages/Banners"
+import AdminCoupons from "./admin/pages/Coupons"
+import AdminProtectedRoute from "./admin/components/AdminProtectedRoute"
+
+// Component to conditionally render Navbar/Footer
+function AppContent() {
+  const location = useLocation()
+  const isAdminRoute = location.pathname.startsWith('/admin')
 
   return (
-    <BrowserRouter>
-      <ToastContainer position="top-right" autoClose={3000} />
-      <ScrollToTop />
-
-      <Navbar />
+    <>
+      {/* Only show Navbar for non-admin routes */}
+      {!isAdminRoute && <Navbar />}
 
       <Routes>
         {/* PUBLIC */}
@@ -149,10 +160,40 @@ function App() {
             </PrivateRoute>
           }
         />
+
+        {/* ADMIN ROUTES */}
+        <Route element={<AdminProtectedRoute />}>
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<AdminDashboard />} />
+            <Route path="dashboard" element={<AdminDashboard />} />
+            <Route path="products" element={<AdminProducts />} />
+            <Route path="orders" element={<AdminOrders />} />
+            <Route path="users" element={<AdminUsers />} />
+            <Route path="banners" element={<AdminBanners />} />
+            <Route path="coupons" element={<AdminCoupons />} />
+          </Route>
+        </Route>
       </Routes>
 
-      <FeaturesStrip />
-      <Footer />
+      {/* Only show Footer and FeaturesStrip for non-admin routes */}
+      {!isAdminRoute && (
+        <>
+          <FeaturesStrip />
+          <Footer />
+        </>
+      )}
+    </>
+  )
+}
+
+function App() {
+  const toast = useRef(null)
+
+  return (
+    <BrowserRouter>
+      <ToastContainer position="top-right" autoClose={3000} />
+      <ScrollToTop />
+      <AppContent />
     </BrowserRouter>
   )
 }

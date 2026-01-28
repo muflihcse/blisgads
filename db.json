@@ -6,14 +6,36 @@
       "email": "demo@gmail.com",
       "password": "123456",
       "cart": [],
-      "wishlist": []
+      "wishlist": [],
+      "shipping": {
+        "fullName": "hgvhj",
+        "phone": "1111111111",
+        "address": "jbhjhj",
+        "city": "hbj",
+        "pincode": "676502"
+      },
+      "isBlocked": false
     },
     {
       "id": "9e78",
       "name": "muflih",
       "email": "muflih123@gmail.com",
       "password": "123456",
-      "cart": [],
+      "cart": [
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800",
+          "selectedColor": "Matte Black",
+          "selectedModel": "iPhone 16 Pro Max",
+          "stock": 6,
+          "qty": 1
+        }
+      ],
       "wishlist": [],
       "shipping": {
         "fullName": "jxb xb cxb",
@@ -21,7 +43,8 @@
         "address": "hdsafcscsacgsaascscvdsagc",
         "city": "jefnjerfrjfjr",
         "pincode": "676502"
-      }
+      },
+      "isBlocked": false
     },
     {
       "id": "57d2",
@@ -146,6 +169,31 @@
         "city": "jefnjerfrjfjr",
         "pincode": "676502"
       }
+    },
+    {
+      "id": "df98",
+      "name": "muf",
+      "email": "muflih@gmail.com",
+      "password": "123456",
+      "isBlocked": false,
+      "cart": [],
+      "wishlist": [],
+      "shipping": {
+        "fullName": "Mohammed Muflih",
+        "phone": "4567890211",
+        "address": "kerala",
+        "city": "kottakakl",
+        "pincode": "676501"
+      }
+    },
+    {
+      "id": "23bf",
+      "name": "muflih",
+      "email": "muflihekd@gmail.com",
+      "password": "12345678",
+      "isBlocked": false,
+      "cart": [],
+      "wishlist": []
     }
   ],
   "products": [
@@ -163,19 +211,24 @@
         {
           "name": "Orange",
           "code": "#f97316",
-          "image": "./assets/17_PM_Silicone_Orange_case.webp"
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800"
         },
         {
           "name": "blue",
           "code": "#000053",
-          "image": "./assets/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.webp"
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.png?v=1764330463&width=800"
         },
         {
           "name": "Black",
           "code": "#111111",
-          "image": "./assets/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.webp"
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.png?v=1764330664&width=600"
         }
-      ]
+      ],
+      "stock": 996,
+      "category": "Phone Case",
+      "trending": true,
+      "showInShop": true,
+      "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800"
     },
     {
       "id": "2",
@@ -198,7 +251,12 @@
           "code": "#000000 ",
           "image": "https://casegear.in/cdn/shop/files/5_76bef746-06bb-48a3-b8c1-041e2bb07f2b.png?v=1700355817&width=500"
         }
-      ]
+      ],
+      "stock": 10,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": true,
+      "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800"
     },
     {
       "id": "3",
@@ -221,7 +279,12 @@
           "code": "#A75502",
           "image": "https://casegear.in/cdn/shop/files/1_Image.png?v=1763099548&width=800"
         }
-      ]
+      ],
+      "stock": 6,
+      "category": "Phone Case",
+      "trending": true,
+      "showInShop": true,
+      "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800"
     },
     {
       "id": "4",
@@ -244,7 +307,12 @@
           "code": "#000000",
           "image": "https://casegear.in/cdn/shop/files/1_4467a1e1-e1f4-4fd1-b27a-f6c8ca2927ee.jpg?v=1763103900&width=800"
         }
-      ]
+      ],
+      "stock": 10,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": true,
+      "image": "https://casegear.in/cdn/shop/files/iphone_16_PM_white_back_image.png?v=1763103900&width=800"
     },
     {
       "id": "5",
@@ -267,7 +335,12 @@
           "code": "#ffffff",
           "image": "https://casexs.in/cdn/shop/files/3_cf494fff-de3d-4431-b82d-0b1fde19a314.jpg?v=1758365672&width=800"
         }
-      ]
+      ],
+      "stock": 1,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": true,
+      "image": "https://casexs.in/cdn/shop/files/3_7ded5b06-0dfc-41c9-9d68-588cf68f4c44.jpg?v=1726909496&width=800"
     },
     {
       "id": "6",
@@ -285,7 +358,12 @@
           "code": "#000000",
           "image": "https://casexs.in/cdn/shop/files/7e5e564d63a772a3a24358c8ffec16d7.jpg?v=1756407829&width=600"
         }
-      ]
+      ],
+      "stock": 4,
+      "category": "Phone Case",
+      "trending": true,
+      "showInShop": true,
+      "image": "https://casexs.in/cdn/shop/files/7e5e564d63a772a3a24358c8ffec16d7.jpg?v=1756407829&width=600"
     },
     {
       "id": "7",
@@ -303,7 +381,12 @@
           "code": "#111827",
           "image": "https://casexs.in/cdn/shop/files/IMG_1373.jpg?v=1764944672&width=800"
         }
-      ]
+      ],
+      "stock": 2,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": true,
+      "image": "https://casexs.in/cdn/shop/files/IMG_1373.jpg?v=1764944672&width=800"
     },
     {
       "id": "8",
@@ -326,7 +409,12 @@
           "code": "#000000",
           "image": "https://casexs.in/cdn/shop/files/1_280dd24b-3ba6-4ada-9d67-7d7527f258c1.jpg?v=1744293312&width=800"
         }
-      ]
+      ],
+      "stock": 4,
+      "category": "Phone Case",
+      "trending": true,
+      "showInShop": true,
+      "image": "https://casexs.in/cdn/shop/files/71BLFiIMqvL._SL1500.jpg?v=1752600855&width=800"
     },
     {
       "id": "9",
@@ -344,7 +432,12 @@
           "code": "#ffffff",
           "image": "https://casexs.in/cdn/shop/files/IMG_0345.heic?v=1742213573&width=700"
         }
-      ]
+      ],
+      "stock": 1,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": true,
+      "image": "https://casexs.in/cdn/shop/files/IMG_0345.heic?v=1742213573&width=700"
     },
     {
       "id": "10",
@@ -362,7 +455,52 @@
           "code": "#000000",
           "image": "https://casexs.in/cdn/shop/files/IMG_8337.png?v=1733747699&width=800"
         }
-      ]
+      ],
+      "stock": 2,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": true,
+      "image": "https://casexs.in/cdn/shop/files/IMG_8337.png?v=1733747699&width=800"
+    },
+    {
+      "id": "1769166821971",
+      "name": "readgear",
+      "device": "iphone 17pro",
+      "price": 1999,
+      "mrp": 2500,
+      "discount": 36,
+      "stock": 3,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": true,
+      "colors": [
+        {
+          "name": "white",
+          "code": "#fcf7f7",
+          "image": "https://casegear.in/cdn/shop/files/1_6edbf806-a5b1-4fc3-9711-a6bde75608e0.jpg?v=1763099992&width=800"
+        }
+      ],
+      "image": "https://casegear.in/cdn/shop/files/1_6edbf806-a5b1-4fc3-9711-a6bde75608e0.jpg?v=1763099992&width=800"
+    },
+    {
+      "id": "1769520355395",
+      "name": "clear case",
+      "device": "17 pro",
+      "price": 799,
+      "mrp": 899,
+      "discount": 10,
+      "stock": -1,
+      "category": "Phone Case",
+      "trending": false,
+      "showInShop": false,
+      "colors": [
+        {
+          "name": "clear",
+          "code": "#fdf7f7",
+          "image": "https://casegear.in/cdn/shop/files/Super_crystal_17_PM_15ffdb20-4aa8-437a-899e-69a65f4de958.png?v=1763099097&width=800"
+        }
+      ],
+      "image": "https://casegear.in/cdn/shop/files/Super_crystal_17_PM_15ffdb20-4aa8-437a-899e-69a65f4de958.png?v=1763099097&width=800"
     }
   ],
   "orders": [
@@ -386,7 +524,7 @@
       },
       "paymentMethod": "Cash on Delivery",
       "total": 4197,
-      "status": "Placed",
+      "status": "Delivered",
       "createdAt": "2026-01-12"
     },
     {
@@ -1739,6 +1877,726 @@
       "total": 1399,
       "status": "Placed",
       "createdAt": "2026-01-17T03:46:10.728Z"
+    },
+    {
+      "id": "ORD-1769067232114",
+      "userId": "1",
+      "items": [
+        {
+          "id": "10",
+          "name": "Flame Flexible Case",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.8,
+          "reviews": 91,
+          "price": 2599,
+          "mrp": 3699,
+          "dealPrice": 2299,
+          "discount": 38,
+          "colors": [
+            {
+              "name": "Black",
+              "code": "#000000",
+              "image": "https://casexs.in/cdn/shop/files/IMG_8337.png?v=1733747699&width=800"
+            }
+          ],
+          "image": "https://casexs.in/cdn/shop/files/IMG_8337.png?v=1733747699&width=800",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "hgvhj",
+        "phone": "1111111111",
+        "address": "jbhjhj",
+        "city": "hbj",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 2599,
+      "discount": 0,
+      "couponCode": null,
+      "total": 2599,
+      "status": "Shipped",
+      "date": "2026-01-22T07:33:52.114Z",
+      "createdAt": "2026-01-22T07:33:52.115Z"
+    },
+    {
+      "id": "ORD-1769356198416",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "1769166821971",
+          "name": "readgear",
+          "price": 1999,
+          "mrp": 2500,
+          "device": "iphone 17pro",
+          "image": "https://casegear.in/cdn/shop/files/1_6edbf806-a5b1-4fc3-9711-a6bde75608e0.jpg?v=1763099992&width=800",
+          "selectedColor": "white",
+          "qty": 3
+        },
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "device": "iPhone 16 Pro Max",
+          "rating": 4.4,
+          "reviews": 321,
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "discount": 45,
+          "colors": [
+            {
+              "name": "Matte Black",
+              "code": "#000000",
+              "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800"
+            },
+            {
+              "name": "Windsor Tan",
+              "code": "#A75502",
+              "image": "https://casegear.in/cdn/shop/files/1_Image.png?v=1763099548&width=800"
+            }
+          ],
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800",
+          "selectedColor": "Matte Black",
+          "qty": 2
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 8395,
+      "discount": 100,
+      "couponCode": "SAVE20",
+      "total": 8295,
+      "status": "Placed",
+      "date": "2026-01-25T15:49:58.416Z",
+      "createdAt": "2026-01-25T15:49:58.416Z"
+    },
+    {
+      "id": "ORD-1769356811670",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "device": "iPhone 16 Pro Max",
+          "rating": 4.4,
+          "reviews": 321,
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "discount": 45,
+          "colors": [
+            {
+              "name": "Matte Black",
+              "code": "#000000",
+              "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800"
+            },
+            {
+              "name": "Windsor Tan",
+              "code": "#A75502",
+              "image": "https://casegear.in/cdn/shop/files/1_Image.png?v=1763099548&width=800"
+            }
+          ],
+          "image": "https://casegear.in/cdn/shop/files/1_Image.png?v=1763099548&width=800",
+          "selectedColor": "Windsor Tan",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 1199,
+      "discount": 0,
+      "couponCode": null,
+      "total": 1199,
+      "status": "Placed",
+      "date": "2026-01-25T16:00:11.670Z",
+      "createdAt": "2026-01-25T16:00:11.670Z"
+    },
+    {
+      "id": "ORD-1769360728578",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800",
+          "selectedColor": "Matte Black",
+          "qty": 2
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "UPI",
+      "subtotal": 2398,
+      "discount": 0,
+      "couponCode": null,
+      "total": 2398,
+      "status": "Shipped",
+      "date": "2026-01-25T17:05:28.578Z",
+      "createdAt": "2026-01-25T17:05:28.579Z"
+    },
+    {
+      "id": "ORD-1769363871265",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800"
+            },
+            {
+              "name": "blue",
+              "code": "#000053",
+              "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.png?v=1764330463&width=800"
+            },
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.png?v=1764330664&width=600"
+            }
+          ],
+          "stock": 1000,
+          "category": "Phone Case",
+          "trending": true,
+          "showInShop": true,
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.png?v=1764330664&width=600",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 2
+        },
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "device": "iPhone 17 Pro Max",
+          "rating": 4.5,
+          "reviews": 277,
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "discount": 35,
+          "colors": [
+            {
+              "name": "Orange",
+              "code": "#f97316",
+              "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800"
+            },
+            {
+              "name": "blue",
+              "code": "#000053",
+              "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.png?v=1764330463&width=800"
+            },
+            {
+              "name": "Black",
+              "code": "#111111",
+              "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Black_case_9773efda-2b65-4a27-af90-dfbe2bc63e89.png?v=1764330664&width=600"
+            }
+          ],
+          "stock": 1000,
+          "category": "Phone Case",
+          "trending": true,
+          "showInShop": true,
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800",
+          "selectedColor": "Orange",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        },
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "device": "iPhone 17 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.png?v=1764330463&width=800",
+          "selectedColor": "blue",
+          "qty": 1
+        },
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800",
+          "selectedColor": "Matte Black",
+          "selectedModel": "iPhone 16 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 6395,
+      "discount": 0,
+      "couponCode": null,
+      "total": 6395,
+      "status": "Placed",
+      "date": "2026-01-25T17:57:51.265Z",
+      "createdAt": "2026-01-25T17:57:51.265Z"
+    },
+    {
+      "id": "ORD-1769364705826",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "device": "iPhone 16 Pro Max",
+          "rating": 4.4,
+          "reviews": 321,
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "discount": 45,
+          "colors": [
+            {
+              "name": "Matte Black",
+              "code": "#000000",
+              "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800"
+            },
+            {
+              "name": "Windsor Tan",
+              "code": "#A75502",
+              "image": "https://casegear.in/cdn/shop/files/1_Image.png?v=1763099548&width=800"
+            }
+          ],
+          "stock": 10,
+          "category": "Phone Case",
+          "trending": true,
+          "showInShop": true,
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800",
+          "selectedColor": "Matte Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 3
+        },
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "device": "iPhone 17 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800",
+          "selectedColor": "Orange",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 4896,
+      "discount": 0,
+      "couponCode": null,
+      "total": 4896,
+      "status": "Placed",
+      "date": "2026-01-25T18:11:45.826Z",
+      "createdAt": "2026-01-25T18:11:45.826Z"
+    },
+    {
+      "id": "ORD-1769364766938",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "device": "iPhone 17 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Blue_case_74ca99b7-0a4c-48b2-b249-2511922dd0c9.png?v=1764330463&width=800",
+          "selectedColor": "blue",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 1299,
+      "discount": 0,
+      "couponCode": null,
+      "total": 1299,
+      "status": "Placed",
+      "date": "2026-01-25T18:12:46.938Z",
+      "createdAt": "2026-01-25T18:12:46.938Z"
+    },
+    {
+      "id": "ORD-1769365475093",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "2",
+          "name": "Grip Armour Case Cover",
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800",
+          "selectedColor": "white",
+          "selectedModel": "iPhone 16 Pro Max",
+          "qty": 1
+        },
+        {
+          "id": "2",
+          "name": "Grip Armour Case Cover",
+          "device": "iPhone 16 Pro Max",
+          "rating": 4.6,
+          "reviews": 198,
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "discount": 36,
+          "colors": [
+            {
+              "name": "white",
+              "code": "#FFFFFF",
+              "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800"
+            },
+            {
+              "name": "Black",
+              "code": "#000000 ",
+              "image": "https://casegear.in/cdn/shop/files/5_76bef746-06bb-48a3-b8c1-041e2bb07f2b.png?v=1700355817&width=500"
+            }
+          ],
+          "stock": 2,
+          "category": "Phone Case",
+          "trending": false,
+          "showInShop": true,
+          "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800",
+          "selectedColor": "white",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 2
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 4197,
+      "discount": 0,
+      "couponCode": null,
+      "total": 4197,
+      "status": "Placed",
+      "date": "2026-01-25T18:24:35.093Z",
+      "createdAt": "2026-01-25T18:24:35.093Z"
+    },
+    {
+      "id": "ORD-1769507141969",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "device": "iPhone 17 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800",
+          "selectedColor": "Orange",
+          "selectedModel": "iPhone 17 Pro Max",
+          "stock": 998,
+          "qty": 1
+        },
+        {
+          "id": "5",
+          "name": "Puffer Black iPhone Case",
+          "price": 1799,
+          "mrp": 2799,
+          "dealPrice": 1599,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casexs.in/cdn/shop/files/3_7ded5b06-0dfc-41c9-9d68-588cf68f4c44.jpg?v=1726909496&width=800",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 16 Pro Max",
+          "stock": 1,
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 3098,
+      "discount": 0,
+      "couponCode": null,
+      "total": 3098,
+      "status": "Placed",
+      "date": "2026-01-27T09:45:41.969Z",
+      "createdAt": "2026-01-27T09:45:41.969Z"
+    },
+    {
+      "id": "ORD-1769507188719",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "5",
+          "name": "Puffer Black iPhone Case",
+          "price": 1799,
+          "mrp": 2799,
+          "dealPrice": 1599,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casexs.in/cdn/shop/files/3_7ded5b06-0dfc-41c9-9d68-588cf68f4c44.jpg?v=1726909496&width=800",
+          "selectedColor": "Black",
+          "selectedModel": "iPhone 16 Pro Max",
+          "stock": 0,
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 1799,
+      "discount": 0,
+      "couponCode": null,
+      "total": 1799,
+      "status": "Delivered",
+      "date": "2026-01-27T09:46:28.719Z",
+      "createdAt": "2026-01-27T09:46:28.719Z"
+    },
+    {
+      "id": "ORD-1769517037996",
+      "userId": "9e78",
+      "items": [
+        {
+          "id": "1",
+          "name": "Silicone Snap Fit Case Cover",
+          "price": 1299,
+          "mrp": 1999,
+          "dealPrice": 1169,
+          "device": "iPhone 17 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/17_PM_Silicone_Orange_case.png?v=1764330664&width=800",
+          "selectedColor": "Orange",
+          "selectedModel": "iPhone 17 Pro Max",
+          "stock": 998,
+          "qty": 1
+        },
+        {
+          "id": "2",
+          "name": "Grip Armour Case Cover",
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800",
+          "selectedColor": "white",
+          "selectedModel": "iPhone 16 Pro Max",
+          "stock": 12,
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "jxb xb cxb",
+        "phone": "7560909225",
+        "address": "hdsafcscsacgsaascscvdsagc",
+        "city": "jefnjerfrjfjr",
+        "pincode": "676502"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 2698,
+      "discount": 100,
+      "couponCode": "SAVE20",
+      "total": 2598,
+      "status": "Placed",
+      "date": "2026-01-27T12:30:37.996Z",
+      "createdAt": "2026-01-27T12:30:37.996Z"
+    },
+    {
+      "id": "ORD-1769517127826",
+      "userId": "df98",
+      "items": [
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800",
+          "selectedColor": "Matte Black",
+          "selectedModel": "iPhone 16 Pro Max",
+          "stock": 7,
+          "qty": 1
+        },
+        {
+          "id": "3",
+          "name": "Modern Leatherite Case Cover",
+          "device": "iPhone 16 Pro Max",
+          "rating": 4.4,
+          "reviews": 321,
+          "price": 1199,
+          "mrp": 1899,
+          "dealPrice": 1049,
+          "discount": 45,
+          "colors": [
+            {
+              "name": "Matte Black",
+              "code": "#000000",
+              "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800"
+            },
+            {
+              "name": "Windsor Tan",
+              "code": "#A75502",
+              "image": "https://casegear.in/cdn/shop/files/1_Image.png?v=1763099548&width=800"
+            }
+          ],
+          "stock": 7,
+          "category": "Phone Case",
+          "trending": true,
+          "showInShop": true,
+          "image": "https://casegear.in/cdn/shop/files/1st.png?v=1763099548&width=800",
+          "selectedColor": "Matte Black",
+          "selectedModel": "iPhone 17 Pro Max",
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "Mohammed Muflih",
+        "phone": "4567890211",
+        "address": "kerala",
+        "city": "kottakakl",
+        "pincode": "676501"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 2398,
+      "discount": 100,
+      "couponCode": "SAVE20",
+      "total": 2298,
+      "status": "Placed",
+      "date": "2026-01-27T12:32:07.826Z",
+      "createdAt": "2026-01-27T12:32:07.826Z"
+    },
+    {
+      "id": "ORD-1769517152995",
+      "userId": "df98",
+      "items": [
+        {
+          "id": "2",
+          "name": "Grip Armour Case Cover",
+          "price": 1399,
+          "mrp": 2199,
+          "dealPrice": 1249,
+          "device": "iPhone 16 Pro Max",
+          "image": "https://casegear.in/cdn/shop/files/Back_PFP_PS.png?v=1763100254&width=800",
+          "selectedColor": "white",
+          "selectedModel": "iPhone 16 Pro Max",
+          "stock": 11,
+          "qty": 1
+        }
+      ],
+      "shippingAddress": {
+        "fullName": "Mohammed Muflih",
+        "phone": "4567890211",
+        "address": "kerala",
+        "city": "kottakakl",
+        "pincode": "676501"
+      },
+      "paymentMethod": "Cash on Delivery",
+      "subtotal": 1399,
+      "discount": 100,
+      "couponCode": "SAVE20",
+      "total": 1299,
+      "status": "Placed",
+      "date": "2026-01-27T12:32:32.995Z",
+      "createdAt": "2026-01-27T12:32:32.995Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": "1769352885243",
+      "title": "   ",
+      "image": "https://casegear.in/cdn/shop/files/photoshoot_Super_crystal_desktop_banner.png?v=1744193496&width=2000",
+      "link": "http://localhost:5173/shop",
+      "active": false
+    },
+    {
+      "id": "1769359125524",
+      "title": "   ",
+      "image": "https://images.dailyobjects.com/marche/assets/images/other-2/Pivot-carousal-banner-desktop.jpg?tr=cm-pad_crop,v-3",
+      "link": "http://localhost:5173/shop",
+      "active": true
+    },
+    {
+      "id": "1769359421025",
+      "title": "comming soon",
+      "image": "https://images.dailyobjects.com/marche/assets/images/homepage/other/hp-C_CATNIP-BANNER-WEB-01.jpg?tr=cm-pad_crop,v-3,w-1920",
+      "link": "http://localhost:5173/shop",
+      "active": true
+    }
+  ],
+  "coupons": [
+    {
+      "id": "1769352275876",
+      "code": "SAVE20",
+      "discountType": "percentage",
+      "discountAmount": "20",
+      "minAmount": "600",
+      "maxDiscount": "100",
+      "expiryDate": "2026-01-28",
+      "active": true,
+      "usageLimitPerUser": "4"
     }
   ]
 }

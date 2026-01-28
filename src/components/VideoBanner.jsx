@@ -2,36 +2,33 @@ function VideoBanner({ scrollTopro }) {
   return (
     <section className="relative h-[90vh] w-full overflow-hidden">
 
-      
       <img
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="./assets/image.jpeg"
+        src="https://images.dailyobjects.com/marche/assets/images/other-2/desktop_home_page_herobanner_stack_collection.jpg?tr=cm-pad_crop,v-3,w-1920"
+        alt="Premium iPhone Cases"
       />
 
-     
-      <div className="absolute inset-0 bg-gradient-to-b "></div>
+      {/* Dark Overlay for Readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
 
-      
-      <div className="relative z-10 flex h-full items-center px-6">
-        <div className="text-start w-1/2 text-black">
+      {/* Content */}
+      <div className="relative z-10 flex h-full items-center px-10 md:px-24">
+        <div className="text-start max-w-3xl text-white">
 
-          <h1 className="text-4xl md:text-4xl font-semibold tracking-widest ">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 drop-shadow-lg">
             PREMIUM iPHONE CASES
           </h1>
 
-          <p className="mt-5 text-sm md:text-base tracking-wide ml-[4rem]">
+          <p className="text-lg md:text-xl tracking-wide mb-10 font-light drop-shadow-md opacity-90">
             Engineered for protection. Designed for elegance.
           </p>
 
-          <div className="flex justify-center w-1/2">
-  <button
-    onClick={scrollTopro}
-    className="mt-10 border  px-10 py-3 text-xs tracking-[0.3em] transition-all duration-300"
-  >
-    SHOP NOW
-  </button>
-</div>
-
+          <button
+            onClick={scrollTopro}
+            className="border border-white px-10 py-3 text-sm tracking-[0.2em] font-medium hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-sm"
+          >
+            SHOP NOW
+          </button>
 
         </div>
       </div>

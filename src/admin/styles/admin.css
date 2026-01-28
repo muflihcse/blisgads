@@ -1,0 +1,625 @@
+:root {
+    /* Apple Design Tokens */
+    --admin-primary: #1D1D1F;
+    --admin-secondary: #0071E3;
+    /* Apple Blue */
+    --admin-bg: #F5F5F7;
+    /* Apple Gray */
+    --admin-card-bg: rgba(255, 255, 255, 0.8);
+    --admin-text-main: #1D1D1F;
+    --admin-text-muted: #86868B;
+    --admin-border: rgba(0, 0, 0, 0.05);
+    --admin-accent: #0071E3;
+
+    /* Apple Status Colors (Soft labels) */
+    --status-blue-bg: #E8F2FF;
+    --status-blue-text: #0071E3;
+    --status-green-bg: #E4F9EC;
+    --status-green-text: #248A3D;
+    --status-yellow-bg: #FFF8E6;
+    --status-yellow-text: #B27B00;
+    --status-red-bg: #FFF2F4;
+    --status-red-text: #FF3B30;
+    --status-purple-bg: #F2EEFF;
+    --status-purple-text: #6E41E2;
+    --status-gray-bg: #F2F2F7;
+    --status-gray-text: #8E8E93;
+
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+    --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    --border-radius-sm: 8px;
+    --border-radius: 14px;
+    --border-radius-lg: 22px;
+}
+
+.admin-body {
+    background-color: var(--admin-bg);
+    color: var(--admin-text-main);
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-main {
+    flex: 1;
+    padding: 2.5rem 3.5rem;
+    overflow-y: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .admin-main {
+        padding: 2rem;
+    }
+}
+
+/* Sidebar - Apple Glassmorphism */
+.admin-sidebar {
+    width: 260px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-right: 1px solid var(--admin-border);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.25rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    transition: var(--transition);
+    z-index: 100;
+}
+
+.sidebar-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    letter-spacing: -0.5px;
+    color: var(--admin-text-main);
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    color: var(--admin-text-main);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    opacity: 1;
+}
+
+.nav-item.active {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: var(--admin-text-main);
+    font-weight: 600;
+    opacity: 1;
+}
+
+.nav-item svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    stroke-width: 2.25px;
+}
+
+.logout-btn {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    color: #FF3B30;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: var(--transition);
+    opacity: 0.8;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 59, 48, 0.08);
+    opacity: 1;
+}
+
+/* Header/Section Titles */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.page-title {
+    font-size: 2.2rem;
+    color: var(--admin-text-main);
+}
+
+/* Stats Cards */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.stat-card {
+    background: #FFFFFF;
+    padding: 1.75rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: var(--transition);
+    border: none;
+}
+
+.stat-card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--admin-bg);
+    color: var(--admin-text-main);
+}
+
+.stat-label {
+    color: var(--admin-text-muted);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--admin-text-main);
+    letter-spacing: -1px;
+}
+
+.stat-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-trend {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.trend-up {
+    color: #248A3D;
+    background: #E4F9EC;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.trend-down {
+    color: #FF3B30;
+    background: #FFF2F4;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* Dashboard Content */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: var(--border-radius-lg);
+    padding: 2.25rem;
+    box-shadow: var(--shadow-sm);
+    border: none;
+    overflow: hidden;
+}
+
+.card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* Tables - Super clean Apple look */
+.table-container {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    overflow: visible;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 1rem 1.5rem;
+    color: var(--admin-text-muted);
+    font-weight: 500;
+    font-size: 0.8rem;
+    background-color: transparent;
+    border-bottom: 1px solid var(--admin-border);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--admin-border);
+    vertical-align: middle;
+    font-size: 0.95rem;
+    color: var(--admin-text-main);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr {
+    transition: var(--transition);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Status Badges - Apple pill style */
+.status-badge {
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.status-badge::before {
+    display: none;
+}
+
+.status-blue {
+    background: var(--status-blue-bg);
+    color: var(--status-blue-text);
+}
+
+.status-green {
+    background: var(--status-green-bg);
+    color: var(--status-green-text);
+}
+
+.status-yellow {
+    background: var(--status-yellow-bg);
+    color: var(--status-yellow-text);
+}
+
+.status-red {
+    background: var(--status-red-bg);
+    color: var(--status-red-text);
+}
+
+.status-purple {
+    background: var(--status-purple-bg);
+    color: var(--status-purple-text);
+}
+
+.status-gray {
+    background: var(--status-gray-bg);
+    color: var(--status-gray-text);
+}
+
+/* Buttons - Rounded & Crisp */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.btn-primary {
+    background-color: var(--admin-secondary);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #0056ad;
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    background-color: #F2F2F7;
+    color: var(--admin-text-main);
+}
+
+.btn-secondary:hover {
+    background-color: #E5E5EA;
+}
+
+.btn-danger {
+    background-color: #FFF2F4;
+    color: #FF3B30;
+}
+
+.btn-danger:hover {
+    background-color: #FFE5E9;
+}
+
+/* Modal - Smooth blur */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: var(--border-radius-lg);
+    padding: 3rem;
+    box-shadow: var(--shadow-lg);
+    border: none;
+    animation: modalIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    width: 100%;
+    margin: auto;
+    max-width: 90vw;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: #F2F2F7;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.close-modal:hover {
+    background: #E5E5EA;
+}
+
+/* Forms - Modern Apple style */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--admin-text-muted);
+}
+
+.form-input,
+.search-input {
+    width: 100%;
+    padding: 0.85rem 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    transition: var(--transition);
+    box-sizing: border-box;
+    color: var(--admin-text-main);
+}
+
+.form-input:focus,
+.search-input:focus {
+    outline: none;
+    border-color: var(--admin-secondary);
+    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
+}
+
+/* Login Page - Clean Apple Auth */
+.login-container {
+    background: #F5F5F7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-card {
+    background: #FFFFFF;
+    padding: 3.5rem;
+    border-radius: var(--border-radius-lg);
+    width: 100%;
+    max-width: 440px;
+    box-shadow: var(--shadow-lg);
+}
+
+.login-card h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #1D1D1F;
+}
+
+/* Search bar refinements */
+.search-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    padding-left: 3rem;
+    height: 52px;
+    background: #FFFFFF;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--admin-text-muted);
+}
+
+/* Images */
+.product-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid var(--admin-border);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard spacing */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 0.5rem;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}

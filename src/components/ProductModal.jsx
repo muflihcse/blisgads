@@ -39,8 +39,7 @@ function ProductModal({ product, onClose }) {
       qty,
     })
 
-    toast.success("Item added to cart 🛒")
-    toast.info("If item exists, quantity updated")
+    toast.success("Item added to cart")
 
     onClose()
   }
@@ -111,6 +110,17 @@ function ProductModal({ product, onClose }) {
             </span>
           </div>
 
+          {/* Low Stock Warning */}
+          {product.stock && product.stock < 5 && (
+            <div className="mt-4 flex items-center gap-2 text-red-600 font-medium bg-red-50 px-3 py-2 rounded-lg w-fit border border-red-100">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+              </span>
+              Hurry! Only {product.stock} items left
+            </div>
+          )}
+
           {/* features */}
           <div className="grid grid-cols-2 gap-3 mt-8 text-sm text-gray-700">
             <div>MagSafe compatible</div>
@@ -146,13 +156,11 @@ function ProductModal({ product, onClose }) {
                   key={color.name}
                   onClick={() => {
                     setActiveColor(color)
-                    toast.info(`Colour changed to ${color.name}`)
                   }}
-                  className={`w-9 h-9 rounded-full border transition ${
-                    activeColor?.name === color.name
-                      ? "ring-2 ring-black"
-                      : "border-gray-300"
-                  }`}
+                  className={`w-9 h-9 rounded-full border transition ${activeColor?.name === color.name
+                    ? "ring-2 ring-black"
+                    : "border-gray-300"
+                    }`}
                   style={{ backgroundColor: color.code }}
                 />
               ))}
@@ -166,7 +174,6 @@ function ProductModal({ product, onClose }) {
               <button
                 onClick={() => {
                   if (qty > 1) {
-                    toast.info("Quantity decreased ➖")
                     setQty(qty - 1)
                   }
                 }}
@@ -179,8 +186,11 @@ function ProductModal({ product, onClose }) {
 
               <button
                 onClick={() => {
+                  if (product.stock === 'NA' || (product.stock !== undefined && qty >= product.stock)) {
+                    toast.error(`Only ${product.stock} items left in stock`)
+                    return
+                  }
                   setQty((q) => q + 1)
-                  toast.success("Quantity increased ➕")
                 }}
                 className="w-9 h-9 border rounded hover:bg-gray-100 transition"
               >
@@ -190,14 +200,18 @@ function ProductModal({ product, onClose }) {
           </div>
 
           <button
+            disabled={product.stock === 'NA' || product.stock <= 0}
             onClick={handleAddToCart}
-            className="mt-10 w-full bg-black text-white py-4 rounded-full text-sm tracking-wide hover:opacity-90 transition"
+            className={`mt-10 w-full py-4 rounded-full text-sm tracking-wide transition ${product.stock === 'NA' || product.stock <= 0
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "bg-black text-white hover:opacity-90"
+              }`}
           >
-            ADD TO CART
+            {product.stock === 'NA' || product.stock <= 0 ? "OUT OF STOCK" : "ADD TO CART"}
           </button>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

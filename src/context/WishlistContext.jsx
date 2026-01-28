@@ -7,9 +7,9 @@ const WishlistContext = createContext(null)
 export function WishlistProvider({ children }) {
   const { user } = useAuth()
   const [wishlist, setWishlist] = useState([])
-  const [isLoaded, setIsLoaded] = useState(false) 
+  const [isLoaded, setIsLoaded] = useState(false)
 
- 
+
   useEffect(() => {
     if (!user) return
 
@@ -25,10 +25,10 @@ export function WishlistProvider({ children }) {
       setWishlist([])
     }
 
-    setIsLoaded(true) 
+    setIsLoaded(true)
   }, [user])
 
-  
+
   useEffect(() => {
     if (!user || !isLoaded) return
 
@@ -36,13 +36,14 @@ export function WishlistProvider({ children }) {
       `wishlist_${user.id}`,
       JSON.stringify(wishlist)
     )
+    window.dispatchEvent(new Event("storage"))
 
     api.patch(`/users/${user.id}`, {
       wishlist
     })
   }, [wishlist, user, isLoaded])
 
- 
+
   const toggleWishlist = async (product) => {
     if (!user) {
       alert("Please login to use wishlist")
@@ -60,7 +61,7 @@ export function WishlistProvider({ children }) {
     setWishlist(updatedWishlist)
   }
 
-  
+
   const isInWishlist = (id) => {
     return wishlist.some(item => item.id === id)
   }

@@ -1,15 +1,16 @@
 import { createContext, useContext, useEffect, useState } from "react"
 import api from "../api/apiContext"
 import { useAuth } from "./AuthContext"
+import { toast } from "react-toastify"
 
 const CartContext = createContext()
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([])
-  const [isLoaded, setIsLoaded] = useState(false) 
+  const [isLoaded, setIsLoaded] = useState(false)
   const { user } = useAuth()
 
-  
+
   useEffect(() => {
     if (!user) return
 
@@ -21,10 +22,10 @@ export function CartProvider({ children }) {
       setCart(user.cart || [])
     }
 
-    setIsLoaded(true) 
+    setIsLoaded(true)
   }, [user])
 
- 
+
   useEffect(() => {
     if (!user || !isLoaded) return
 
@@ -32,25 +33,39 @@ export function CartProvider({ children }) {
       `cart_${user.id}`,
       JSON.stringify(cart)
     )
+    window.dispatchEvent(new Event("storage"))
 
-   
+
     api.patch(`/users/${user.id}`, { cart })
   }, [cart, user, isLoaded])
 
 
   const addToCart = (product) => {
+    if (user && user.isBlocked) {
+      toast.error("🚫 Your account is blocked. You cannot add items to cart.");
+      return;
+    }
+
     setCart((prev) => {
       const exists = prev.find(
         (item) =>
           item.id === product.id &&
-          item.selectedColor === product.selectedColor
+          item.selectedColor === product.selectedColor &&
+          item.selectedModel === product.selectedModel
       )
 
       if (exists) {
+        const latestStock = product.stock !== undefined ? product.stock : exists.stock
+
+        if (latestStock !== undefined && exists.qty + (product.qty || 1) > latestStock) {
+          toast.error(`Stock limit reached! Only ${latestStock} items available.`)
+          return prev
+        }
         return prev.map((item) =>
           item.id === product.id &&
-          item.selectedColor === product.selectedColor
-            ? { ...item, qty: item.qty + 1 }
+            item.selectedColor === product.selectedColor &&
+            item.selectedModel === product.selectedModel
+            ? { ...item, qty: item.qty + (product.qty || 1), stock: latestStock }
             : item
         )
       }
@@ -59,23 +74,28 @@ export function CartProvider({ children }) {
     })
   }
 
- 
-  const increaseQty = (id, color) => {
-    setCart((prev) =>
-      prev.map((item) =>
-        item.id === id && item.selectedColor === color
+
+  const increaseQty = (id, color, model) => {
+    setCart((prev) => {
+      const item = prev.find(i => i.id === id && i.selectedColor === color && i.selectedModel === model)
+      if (item && item.stock && item.qty >= item.stock) {
+        toast.error(`Stock limit reached! Only ${item.stock} items left.`)
+        return prev
+      }
+      return prev.map((item) =>
+        item.id === id && item.selectedColor === color && item.selectedModel === model
           ? { ...item, qty: item.qty + 1 }
           : item
       )
-    )
+    })
   }
 
-  
-  const decreaseQty = (id, color) => {
+
+  const decreaseQty = (id, color, model) => {
     setCart((prev) =>
       prev
         .map((item) =>
-          item.id === id && item.selectedColor === color
+          item.id === id && item.selectedColor === color && item.selectedModel === model
             ? { ...item, qty: item.qty - 1 }
             : item
         )
@@ -83,17 +103,17 @@ export function CartProvider({ children }) {
     )
   }
 
-  
-  const removeFromCart = (id, color) => {
+
+  const removeFromCart = (id, color, model) => {
     setCart((prev) =>
       prev.filter(
         (item) =>
-          !(item.id === id && item.selectedColor === color)
+          !(item.id === id && item.selectedColor === color && item.selectedModel === model)
       )
     )
   }
 
-  
+
   const clearCart = () => {
     setCart([])
     if (user) {
@@ -102,7 +122,7 @@ export function CartProvider({ children }) {
     }
   }
 
-  
+
   const total = cart.reduce(
     (sum, item) =>
       sum + Number(item.price) * Number(item.qty ?? 1),

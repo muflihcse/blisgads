@@ -8,6 +8,7 @@ import {
   FiMenu,
 } from "react-icons/fi"
 import { useState } from "react"
+import { toast } from "react-toastify"
 
 import { useAuth } from "../context/AuthContext"
 import { useCart } from "../context/CartContext"
@@ -18,7 +19,7 @@ function Navbar() {
   const { cart } = useCart()
   const { wishlist } = useWishlist()
   const navigate = useNavigate()
-  
+
 
   const [showSearch, setShowSearch] = useState(false)
   const [query, setQuery] = useState("")
@@ -40,6 +41,7 @@ function Navbar() {
 
   const handleLogout = () => {
     logout()
+    toast.success("Logged out successfully ")
     navigate("/login")
     setMobileMenu(false)
   }
@@ -50,11 +52,11 @@ function Navbar() {
 
         {/* ----------logo------ */}
         <Link to="/" className="text-xl font-semibold tracking-wide">
-          <img src="./assets/Logo.png" alt="" className="h-70 w-auto object-contain"/>
+          <img src="./assets/Logo.png" alt="" className="h-70 w-auto object-contain" />
         </Link>
 
         {/* ========menu=========== */}
-       {user &&  <div className="hidden md:flex gap-8 text-sm">
+        {user && <div className="hidden md:flex gap-8 text-sm">
           <Link to="/">Home</Link>
           <Link to="/shop">Shop</Link>
           <Link to="/orders">Orders</Link>
